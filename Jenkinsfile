@@ -14,7 +14,7 @@ stages {
 
   stage ('stage2'){
     steps{
-      echo "stage 2 step "
+      echo "stage 2 step changes "
     }
 
   }
