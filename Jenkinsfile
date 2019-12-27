@@ -63,6 +63,8 @@ stages {
 		parameters {
 			string(name:'username', defaultValue: 'user', description: 'Username of the user pressing Ok')
 		}
+	    
+    	}
     
       steps{
         echo "User: ${username} said OK"
@@ -71,7 +73,7 @@ stages {
   
   }
   
-    }
+    
 
 
 // use full refrence
@@ -83,4 +85,5 @@ stages {
 // ${YOUR_JENKINS_URL}/directive-generator.
 
 //https://jenkins.io/doc/pipeline/steps/pipeline-input-step/
+}
 }
