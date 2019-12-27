@@ -73,7 +73,7 @@ stages {
   
     }
 
-}
+
 // use full refrence
 //http://jenkins3.southindia.cloudapp.azure.com:8080/pipeline-syntax/globals
 //http://groovy-lang.org/semantics.html
@@ -83,4 +83,4 @@ stages {
 // ${YOUR_JENKINS_URL}/directive-generator.
 
 //https://jenkins.io/doc/pipeline/steps/pipeline-input-step/
-
+}
