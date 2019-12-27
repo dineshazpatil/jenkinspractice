@@ -45,7 +45,7 @@ stages {
             }
             steps {
           
-                echo "printenv"
+                powershell 'write-output ${env}'
         // Success!
     }
             
