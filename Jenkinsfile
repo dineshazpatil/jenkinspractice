@@ -43,9 +43,9 @@ stages {
         
                 def service = powershell(returnStatus: true, script: 'get-service -name ${env:studentname}')
             }
-        steps {
+            steps {
           
-            echo "service"
+                echo "printenv"
         // Success!
     }
             
