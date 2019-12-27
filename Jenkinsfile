@@ -41,11 +41,11 @@ stages {
     {
         environment {
         
-                def service = powershell(returnStatus: true, script: 'get-service -name ${env:studentname}')
+                service = powershell(returnStatus: true, script: 'get-service -name ${env:studentname}')
             }
             steps {
           
-                powershell 'write-output ${env}'
+                powershell 'write-output "$service"'
         // Success!
     }
             
