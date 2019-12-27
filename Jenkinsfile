@@ -11,8 +11,17 @@ stages {
     }
 
   }
+    
+    stage ('stage 2')
+    {
+        steps {
+        
+            powershell 'write-output "Hello, World ! ${$env:studentname}"'
+        }
+    
+    }
 
-  stage ('stage2'){
+  stage ('stage3'){
     steps{
       echo "stage 2 step changes "
     }
