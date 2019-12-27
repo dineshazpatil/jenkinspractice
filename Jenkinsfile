@@ -16,7 +16,7 @@ stages {
     {
         steps {
         
-            powershell 'write-output "Hello, World ! ${$env:studentname}"'
+            powershell 'write-output "Hello, World !"'
         }
     
     }
@@ -27,6 +27,15 @@ stages {
     }
 
   }
+    
+        stage ('stage 4')
+    {
+        steps {
+        
+            powershell 'write-output "Hello, World ! ${$env:studentname}"'
+        }
+    
+    }
 
 }
 }
