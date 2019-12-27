@@ -67,7 +67,7 @@ stages {
     	}
     
       steps{
-        echo "User: ${username} said OK"
+        //echo "User: ${username} said OK"
         powershell 'write-output "user ${username} said OK to powershell"'
       }
   
