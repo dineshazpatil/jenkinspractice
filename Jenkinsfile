@@ -7,7 +7,7 @@ stages {
 
   stage ('stage1'){
     steps{
-      echo "stage 1 step "
+        echo "stage 1 step ${$env:studentname}"
     }
 
   }
