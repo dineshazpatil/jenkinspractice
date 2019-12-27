@@ -32,7 +32,7 @@ stages {
     {
         steps {
         
-            powershell 'write-output "Hello, World ! ${$env:studentname}"'
+            powershell 'write-output "Hello, World ! ${env:studentname}"'
         }
     
     }
