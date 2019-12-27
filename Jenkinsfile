@@ -2,6 +2,9 @@
 pipeline {
 
 agent any
+parameters {
+  string defaultValue: 'myname', description: '', name: 'test1', trim: true
+}
     
 stages {
 
@@ -53,5 +56,13 @@ stages {
     }
 
 }
+// use full refrence
+//http://jenkins3.southindia.cloudapp.azure.com:8080/pipeline-syntax/globals
+//http://groovy-lang.org/semantics.html
+// mail to: 'devops@acme.com',
+    //subject: "Job '${JOB_NAME}' (${BUILD_NUMBER}) is waiting for input",
+    //body: "Please go to ${BUILD_URL} and verify the build"
+// ${YOUR_JENKINS_URL}/directive-generator.
+
 
 
