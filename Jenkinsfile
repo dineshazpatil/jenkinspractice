@@ -45,7 +45,7 @@ stages {
             }
             steps {
           
-                powershell 'write-output "$service"'
+                powershell 'write-output "${service}"'
         // Success!
     }
             
