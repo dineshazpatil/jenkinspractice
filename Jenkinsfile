@@ -51,8 +51,26 @@ stages {
                 powershell 'write-output "${service}"'
         // Success!
     }
-            
+      
+                
         }
+  
+    stage ('stage 6')
+  {
+    input{
+		message "Press Ok to continue"
+		submitter "user1,user2"
+		parameters {
+			string(name:'username', defaultValue: 'user', description: 'Username of the user pressing Ok')
+		}
+    
+      steps{
+        echo "User: ${username} said OK"
+        powershell 'write-output "user ${username} said OK to powershell"'
+      }
+  
+  }
+  
     }
 
 }
@@ -64,5 +82,5 @@ stages {
     //body: "Please go to ${BUILD_URL} and verify the build"
 // ${YOUR_JENKINS_URL}/directive-generator.
 
-
+//https://jenkins.io/doc/pipeline/steps/pipeline-input-step/
 
