@@ -39,7 +39,10 @@ stages {
     
     stage('stage 5')
     {
-        def service = powershell(returnStatus: true, script: 'get-service -name ${env:studentname}')
+        environment {
+        
+                def service = powershell(returnStatus: true, script: 'get-service -name ${env:studentname}')
+            }
         steps {
           
             echo "service"
